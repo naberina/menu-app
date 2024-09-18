@@ -64,3 +64,21 @@ button.add:hover {
 button.remove:hover {
   background-color: #c82333; /* 赤色の背景が濃くなる */
 }
+
+/* 注文内容のスタイル */
+.order-summary {
+  margin-top: 20px;
+}
+
+.order-summary h2 {
+  margin-bottom: 10px;
+}
+
+.order-summary ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-summary li {
+  margin-bottom: 5px;
+}
