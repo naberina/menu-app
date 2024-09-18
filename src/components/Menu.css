@@ -1,0 +1,66 @@
+h1 {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  clear: both; /* h1の横に配置されないようにクリア */
+}
+  
+.menu-container > div {
+  flex: 1 1 30%; /* 各アイテムが同じ大きさで30%の幅をとる */
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+  
+img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* src/components/Menu.css */
+
+/* 共通ボタンスタイル */
+button {
+  background-color: #007bff; /* 青色の背景 */
+  border: none; /* ボーダーを削除 */
+  color: white; /* テキスト色を白に */
+  padding: 10px 20px; /* 内側のスペースを設定 */
+  text-align: center; /* テキストを中央に配置 */
+  text-decoration: none; /* テキストの下線を削除 */
+  display: inline-block; /* インラインブロックに設定 */
+  font-size: 16px; /* フォントサイズを設定 */
+  margin: 5px; /* ボタン間のスペースを設定 */
+  cursor: pointer; /* カーソルをポインターに */
+  border-radius: 4px; /* 角を丸くする */
+  transition: background-color 0.3s ease; /* ホバー時の色の変化をスムーズに */
+}
+
+/* Addボタンのスタイル */
+button.add {
+  background-color: #28a745; /* 緑色の背景 */
+}
+
+/* Removeボタンのスタイル */
+button.remove {
+  background-color: #dc3545; /* 赤色の背景 */
+}
+
+/* ホバー時のスタイル */
+button:hover {
+  background-color: #0056b3; /* 青色の背景が濃くなる */
+}
+
+button.add:hover {
+  background-color: #218838; /* 緑色の背景が濃くなる */
+}
+
+button.remove:hover {
+  background-color: #c82333; /* 赤色の背景が濃くなる */
+}
